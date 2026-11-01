@@ -1,4 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Snicklet – snicklet-favicon.svg">
-<title>Snicklet – snicklet-favicon.svg</title>
-<rect width="64" height="64" rx="14" fill="#0B2145"/><path d="M76,64 L66,77 L55,97 L50,110 L46,129 L46,156 L50,174 L60,197 L73,215 L90,232 L116,250 L136,260 L163,270 L189,277 L263,291 L282,296 L294,302 L301,309 L303,320 L300,327 L290,336 L279,340 L265,341 L240,337 L207,329 L148,311 L145,309 L106,299 L83,296 L65,296 L45,301 L27,311 L13,325 L4,341 L0,359 L1,377 L6,394 L10,402 L25,422 L39,434 L56,444 L72,450 L84,453 L103,455 L429,455 L460,450 L480,443 L498,434 L518,420 L535,403 L542,394 L551,379 L556,367 L562,341 L562,322 L560,310 L553,289 L537,263 L514,240 L455,191 L426,163 L415,148 L411,140 L407,128 L406,118 L408,116 L529,115 L548,110 L562,102 L572,93 L581,81 L586,71 L589,60 L589,41 L586,30 L579,18 L569,9 L551,1 L532,0 L212,0 L182,4 L163,9 L146,15 L123,26 L99,42 Z" fill="#2CDAF5" transform="translate(5 15) scale(.091)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Snicklet – snicklet-app-icon.svg">
+<title>Snicklet – snicklet-app-icon.svg</title>
+
+ <defs>
+  <clipPath id="s-outline"><path d="M76,64 L66,77 L55,97 L50,110 L46,129 L46,156 L50,174 L60,197 L73,215 L90,232 L116,250 L136,260 L163,270 L189,277 L263,291 L282,296 L294,302 L301,309 L303,320 L300,327 L290,336 L279,340 L265,341 L240,337 L207,329 L148,311 L145,309 L106,299 L83,296 L65,296 L45,301 L27,311 L13,325 L4,341 L0,359 L1,377 L6,394 L10,402 L25,422 L39,434 L56,444 L72,450 L84,453 L103,455 L429,455 L460,450 L480,443 L498,434 L518,420 L535,403 L542,394 L551,379 L556,367 L562,341 L562,322 L560,310 L553,289 L537,263 L514,240 L455,191 L426,163 L415,148 L411,140 L407,128 L406,118 L408,116 L529,115 L548,110 L562,102 L572,93 L581,81 L586,71 L589,60 L589,41 L586,30 L579,18 L569,9 L551,1 L532,0 L212,0 L182,4 L163,9 L146,15 L123,26 L99,42 Z"/></clipPath>
+  <linearGradient id="cyan" gradientUnits="userSpaceOnUse" x1="95" y1="120" x2="575" y2="350">
+   <stop stop-color="#03E7F9"/><stop offset=".47" stop-color="#2CDAF5"/><stop offset=".75" stop-color="#02DBFB"/><stop offset="1" stop-color="#03CAF9"/>
+  </linearGradient>
+  <linearGradient id="topBlue" gradientUnits="userSpaceOnUse" x1="175" y1="150" x2="480" y2="55">
+   <stop stop-color="#048BFA"/><stop offset=".28" stop-color="#06B6F7"/><stop offset=".72" stop-color="#08D5F6"/><stop offset="1" stop-color="#17E9EF"/>
+  </linearGradient>
+  <linearGradient id="innerBlue" gradientUnits="userSpaceOnUse" x1="350" y1="172" x2="545" y2="276">
+   <stop stop-color="#003D85"/><stop offset=".60" stop-color="#076BBB"/><stop offset="1" stop-color="#078DDD"/>
+  </linearGradient>
+  <linearGradient id="bottomBlue" gradientUnits="userSpaceOnUse" x1="490" y1="380" x2="170" y2="500">
+   <stop stop-color="#06438E"/><stop offset=".60" stop-color="#067ACA"/><stop offset="1" stop-color="#0699DE"/>
+  </linearGradient>
+  <linearGradient id="mint" gradientUnits="userSpaceOnUse" x1="55" y1="352" x2="305" y2="502">
+   <stop stop-color="#9AFA84"/><stop offset=".5" stop-color="#59F0A6"/><stop offset="1" stop-color="#20DDB2"/>
+  </linearGradient>
+  <linearGradient id="peach" gradientUnits="userSpaceOnUse" x1="465" y1="145" x2="615" y2="36">
+   <stop stop-color="#FF779E"/><stop offset=".55" stop-color="#FFAB96"/><stop offset="1" stop-color="#FFD18B"/>
+  </linearGradient>
+ </defs><rect width="512" height="512" rx="116" fill="#F8FCFF"/>
+<g transform="translate(52 96) scale(.69)">
+ <path d="M76,64 L66,77 L55,97 L50,110 L46,129 L46,156 L50,174 L60,197 L73,215 L90,232 L116,250 L136,260 L163,270 L189,277 L263,291 L282,296 L294,302 L301,309 L303,320 L300,327 L290,336 L279,340 L265,341 L240,337 L207,329 L148,311 L145,309 L106,299 L83,296 L65,296 L45,301 L27,311 L13,325 L4,341 L0,359 L1,377 L6,394 L10,402 L25,422 L39,434 L56,444 L72,450 L84,453 L103,455 L429,455 L460,450 L480,443 L498,434 L518,420 L535,403 L542,394 L551,379 L556,367 L562,341 L562,322 L560,310 L553,289 L537,263 L514,240 L455,191 L426,163 L415,148 L411,140 L407,128 L406,118 L408,116 L529,115 L548,110 L562,102 L572,93 L581,81 L586,71 L589,60 L589,41 L586,30 L579,18 L569,9 L551,1 L532,0 L212,0 L182,4 L163,9 L146,15 L123,26 L99,42 Z" fill="url(#cyan)"/>
+ <g clip-path="url(#s-outline)">
+  <g transform="translate(-33 -38)">
+   <path d="M210,38 C165,43 153,85 164,117 C171,154 221,183 290,198 C324,177 379,161 440,155 C443,108 489,70 566,38 Z" fill="url(#topBlue)"/>
+   <path d="M290,198 C332,170 376,160 440,155 C440,207 482,236 558,288 C464,252 372,220 290,198 Z" fill="url(#innerBlue)"/>
+   <path d="M165,345 L190,361 L213,381 L236,407 L272,456 L295,479 L315,492 L458,492 L478,483 L485,476 L491,465 L494,454 L492,432 L484,414 L474,401 L447,378 L422,364 L396,353 L364,343 L320,334 L320,336 L328,340 L336,350 L336,360 L333,366 L327,372 L315,378 L290,379 L240,368 Z" fill="url(#bottomBlue)"/>
+   <path d="M619,67 L613,57 L601,46 L585,39 L569,38 L504,74 L473,94 L457,110 L450,120 L441,141 L440,152 L442,154 L536,155 L561,154 L580,149 L597,139 L610,126 L619,110 L623,94 L623,82 Z" fill="url(#peach)"/>
+   <path d="M106,334 C167,334 212,369 251,420 C277,456 297,485 317,494 L116,494 C60,493 33,453 33,411 C33,369 63,334 106,334 Z" fill="url(#mint)"/>
+  </g>
+ </g></g>
 </svg>
