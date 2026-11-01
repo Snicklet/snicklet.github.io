@@ -1,0 +1,148 @@
+---
+import '../styles/global.css';
+const features = [
+  { number: '01', title: 'See your dependencies', text: 'Follow static template references and understand how pipeline files connect, without opening them one by one.', icon: '↗' },
+  { number: '02', title: 'Find the source', text: 'Navigate from a reference to its origin and inspect the relevant YAML in context.', icon: '⌁' },
+  { number: '03', title: 'Stay oriented', text: 'Move between the dependency graph, structure and source while keeping the workspace in view.', icon: '◎' },
+];
+const roadmap = [
+  { label: 'Available in development', title: 'Static dependency exploration', text: 'Local YAML discovery, template references and contextual navigation.' },
+  { label: 'Planned', title: 'Execution flow', text: 'Stage, job and step-oriented views for understanding pipeline execution structure.' },
+  { label: 'Planned', title: 'Contextual editing', text: 'Editing, parameter binding and save workflows with explicit change control.' },
+];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#14212d" />
+    <meta name="description" content="Snicklet is a visual-first DevOps IDE for exploring YAML pipeline dependencies, tracing shared templates and navigating CI/CD configurations." />
+    <meta property="og:title" content="Snicklet — See the whole picture behind your pipelines" />
+    <meta property="og:description" content="Explore dependencies, trace shared templates, and understand CI/CD configurations visually." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://snicklet.github.io/" />
+    <link rel="canonical" href="https://snicklet.github.io/" />
+    <link rel="icon" type="image/svg+xml" href="/brand/snicklet-favicon.svg" />
+    <title>Snicklet — Visual-first DevOps IDE</title>
+    <script is:inline>
+      try {
+        const stored = localStorage.getItem('snicklet-theme');
+        document.documentElement.dataset.theme = stored === 'light' || stored === 'dark' ? stored : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Snicklet, back to top">
+          <img class="brand-dark" src="/brand/snicklet-horizontal-on-dark.svg" alt="Snicklet" width="165" height="51" />
+          <img class="brand-light" src="/brand/snicklet-horizontal.svg" alt="Snicklet" width="165" height="51" />
+        </a>
+        <nav aria-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="https://github.com/Snicklet" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">◐ <span>Theme</span></button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero container" id="top" aria-labelledby="hero-title">
+        <div class="eyebrow"><span class="status-dot"></span> A VISUAL-FIRST DEVOPS IDE <span class="eyebrow-line"></span> IN DEVELOPMENT</div>
+        <h1 id="hero-title">Understand your pipelines.<br /><em>See the whole picture.</em></h1>
+        <p class="hero-copy">Explore YAML dependencies, trace shared templates, and navigate CI/CD configurations visually — without getting lost in files.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#features">Explore features <span aria-hidden="true">↘</span></a>
+          <a class="button secondary" href="https://github.com/Snicklet" target="_blank" rel="noopener noreferrer">Find us on GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="product-frame" aria-label="Reserved space for an approved screenshot of the Snicklet Dependency Explorer">
+          <div class="frame-titlebar"><div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>Snicklet / Dependency Explorer</span><span class="frame-label">PREVIEW SPACE</span></div>
+          <div class="frame-content">
+            <div class="frame-grid" aria-hidden="true"></div>
+            <div class="preview-placeholder">
+              <div class="placeholder-glyph" aria-hidden="true">⌘</div>
+              <strong>Real product preview coming soon</strong>
+              <p>We'll add an approved capture of the Dependency Explorer as development progresses.</p>
+              <span>NO SIMULATED PRODUCT UI</span>
+            </div>
+          </div>
+        </div>
+        <p class="hero-caption">A work in progress, built to make complex pipelines easier to understand.</p>
+      </section>
+
+      <section class="section problem-section" id="why">
+        <div class="container narrow">
+          <p class="section-label">THE CHALLENGE</p>
+          <h2>One pipeline. Many files.<br /><span>Too many places to look.</span></h2>
+          <p>Templates call other templates. Shared definitions appear across different paths. Understanding a pipeline shouldn't mean tracing every YAML reference by hand.</p>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section-intro">
+            <p class="section-label">EXPLORE VISUALLY</p>
+            <h2>From scattered files<br />to a clearer structure.</h2>
+            <p>Snicklet puts dependency exploration at the center of the workspace, with source and details within reach when you need them.</p>
+          </div>
+          <div class="feature-grid">
+            {features.map((feature) => (
+              <article class="feature-card">
+                <div class="feature-top"><span>{feature.number} / EXPLORE</span><span aria-hidden="true">{feature.icon}</span></div>
+                <h3>{feature.title}</h3><p>{feature.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="section developer-section">
+        <div class="container developer-layout">
+          <div>
+            <p class="section-label">BUILT FOR DEVOPS</p>
+            <h2>The YAML is still yours.<br /><span>The context is clearer.</span></h2>
+            <p>Designed around Azure DevOps YAML pipelines and static template discovery. Snicklet helps you navigate the relationships behind the configuration without replacing source code with a black box.</p>
+            <p class="small-note">Support and scope will evolve as development continues.</p>
+          </div>
+          <div class="code-card" aria-label="Illustrative Azure Pipelines YAML example, not a Snicklet screenshot">
+            <div class="code-header"><span>azure-pipelines.yml</span><span>ILLUSTRATIVE YAML</span></div>
+            <pre><code><span class="code-purple">stages</span>:
+  - <span class="code-purple">template</span>: templates/build.yml
+  - <span class="code-purple">template</span>: templates/test.yml
+
+<span class="code-comment"># Two references.</span>
+<span class="code-comment"># One connected picture.</span></code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="section roadmap-section" id="roadmap">
+        <div class="container">
+          <div class="section-intro">
+            <p class="section-label">WHAT'S NEXT</p>
+            <h2>Built step by step.<br /><span>Shared as it grows.</span></h2>
+            <p>Snicklet is under active development. Here's a view of the direction, not a release promise.</p>
+          </div>
+          <div class="roadmap-grid">
+            {roadmap.map((item) => <article class="roadmap-item"><span class="roadmap-status">{item.label}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}
+          </div>
+        </div>
+      </section>
+      <section class="closing-section container"><p class="section-label">GET TO KNOW SNICKLET</p><h2>Less hunting through files.<br /><em>More understanding.</em></h2><a class="button primary" href="https://github.com/Snicklet" target="_blank" rel="noopener noreferrer">Explore the GitHub organization ↗</a></section>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><span>© {new Date().getFullYear()} Snicklet</span><span>Visual-first, developer-minded.</span><a href="#top">Back to top ↑</a></div></footer>
+    <script>
+      const toggle = document.querySelector<HTMLButtonElement>('#theme-toggle');
+      toggle?.addEventListener('click', () => {
+        const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        document.documentElement.dataset.theme = next;
+        try { localStorage.setItem('snicklet-theme', next); } catch { /* storage disabled */ }
+      });
+    </script>
+  </body>
+</html>
